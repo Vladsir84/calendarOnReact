@@ -1,14 +1,25 @@
 import React from 'react';
 
-const RenderSidebar = () => {
+
+const GetHours = () => {
     return (
-        <section className="sidebar">
+        <div
+            className="timing__blocks"
+            data-block-number='1'
+        ><span className="clock">00:00</span></div>
+    )
+}
 
-            <div className="timing"></div>
-            <div className="calendar-visualization"></div>
+const RenderSidebar = () => {
 
-        </section>
-    );
-};
+        return (
+            <section className="sidebar">
+                 <GetHours />
+                <div className="timing"></div>
+                <div className="calendar-visualization"></div>
+
+            </section>
+        );
+    };
 
 export default RenderSidebar;
