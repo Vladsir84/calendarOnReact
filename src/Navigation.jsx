@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Navigation = () => {
+    
     return (
         <nav className="days-navigation">
         <div className="week">
