@@ -2,6 +2,20 @@
   display: flex;
   width: 100%;
   z-index: 1;
+}
+  
+.clock {
+    display: flex; 
+    position: relative;
+      top: 2px;
+      margin-right: 10px;
+      margin-left: 10px;
+      flex-direction: column;
+      height: 60px;
+      color: black;
+}
+  
+  
   
   .timing {
     &__blocks {
@@ -20,7 +34,7 @@
       border-top: 1px solid black;
     }
   }
-}
+
 
 .active_event {
   border-radius: 5px;
