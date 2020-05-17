@@ -7,7 +7,7 @@
 .clock {
     display: flex; 
     position: relative;
-      top: 2px;
+      top: 10px;
       margin-right: 10px;
       margin-left: 10px;
       flex-direction: column;
@@ -19,12 +19,12 @@
   
   .timing {
     &__blocks {
-      position: relative;
-      top: 52px;
+      // position: relative;
+      // top: 52px;
       margin-right: 10px;
       margin-left: 10px;
-      height: 60px;
-      color: black;
+      // height: 60px;
+      // color: black;
     }
   }
   .line {
