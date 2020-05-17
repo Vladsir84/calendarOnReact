@@ -47,4 +47,5 @@ class RenderSidebar extends Component {
         );
     };
 }
+
 export default RenderSidebar;
