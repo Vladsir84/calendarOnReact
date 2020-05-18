@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
-import App from './App';
+import App from './App.jsx';
 
 const rootElement = document.querySelector('#root');
 

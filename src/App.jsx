@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
-import Header from './Header'
-import Navigation from './Navigation';
-import RenderSidebar from './RenderSidebar';
+import Header from './Header.jsx'
+import Navigation from './Navigation.jsx';
+import RenderSidebar from './RenderSidebar.jsx';
+
 
 const App = () => {
     return (
@@ -9,6 +11,7 @@ const App = () => {
             <Header />
             <Navigation />
             <RenderSidebar />
+           
         </>
     );
 };
