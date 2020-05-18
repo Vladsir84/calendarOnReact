@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class RenderWeek extends Component {
 
     state = {
-        days: [ '', '', '', '', '', '', '']
+        days: [ '', '', '', '', '', '', '', '', '', '', '', '', '', '']
     };
 
     render() {

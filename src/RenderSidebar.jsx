@@ -44,6 +44,7 @@ class RenderSidebar extends Component {
                 </div>
                 <div className="timing"></div>
                 <RenderDay />
+                
             </section>
         );
     };
