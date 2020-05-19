@@ -7,7 +7,7 @@
 .clock {
     display: flex; 
     position: relative;
-      top: 10px;
+      top: 52px;
       margin-right: 10px;
       margin-left: 10px;
       flex-direction: column;
@@ -30,39 +30,4 @@
   }
 
 
-.active_event {
-  border-radius: 5px;
-  background-color: blue;
-  font-size: 15px;
-  color: white;
-  width: 95%;
-  margin-left: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
-.redLine {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-}
-
-.redLine-round {
-  background-color: #ea4335;
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-}
-
-.redLine-line {
-  margin-top: 4px;
-  width: 85%;
-  border-top: #ea4335 solid 2px;
-}
-
-.temporary-cell {
-  background-color: violet;
-}

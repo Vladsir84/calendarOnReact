@@ -4,21 +4,46 @@ import React, { Component } from 'react';
 class RenderDay extends Component {
 
     state = {
-        days: [ '', '', '', '', '', '', '']
+        
+        days: [ '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '',  
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+                '', 
+            ]
     };
 
     render() {
+        
         const getDays = this.state.days.slice()
         return (
-            <div className="calendar-visualization">{getDays.map(() => 
-                <div data-time="01:00" className="emptyRow">
+            
+            <div className="calendar-visualization">
+                <div className="emptyColumn">
                   {getDays.map((day) => 
                     <div key={day} className="emptyCell">{day}</div>
                   )}  
                 </div>
-                )}
             </div>
-
+                 
         );
     };
 }

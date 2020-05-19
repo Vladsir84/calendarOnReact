@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import RenderDay from './RenderDay.jsx';
 
+
 class RenderSidebar extends Component {
 
     state = {
-        hours: ['00:00',
+        hours: [
             '01:00',
             '02:00',
             '03:00',
@@ -42,8 +43,10 @@ class RenderSidebar extends Component {
                         <span key={hour} className="clock">{hour}</span>
                     )}
                 </div>
-                <div className="timing"></div>
+                
                 <RenderDay />
+              
+                <div className="timing"></div> 
                 
             </section>
         );

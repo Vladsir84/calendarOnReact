@@ -2,19 +2,16 @@
   flex-grow: 1;
   height: 60px;
   border: 1px solid lightgrey;
+  width: 100%;
 }
 
-.emptyRow {
+.emptyColumn {
+  width: 13%;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  flex-direction: column;
 }
-
-// .emptyColumn {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
 
 .calendar-visualization {
-  width: 100%;
+ width: 100%;
 }
