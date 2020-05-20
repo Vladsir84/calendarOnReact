@@ -5,8 +5,6 @@ import RenderDay from './RenderDay.jsx'
 // import { generateWeekRange } from './TimeUtils.jsx'
 
 
-
-
 const RenderWeek = () => {
 
     const generateWeekRange = startDate => {
@@ -27,7 +25,5 @@ const RenderWeek = () => {
 
     )
 }
-
-
 
 export default RenderWeek;
