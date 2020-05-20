@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import RenderDay from './RenderDay.jsx';
-
+import RenderWeek from './RenderWeek.jsx'
 
 class RenderSidebar extends Component {
 
@@ -37,17 +36,15 @@ class RenderSidebar extends Component {
         const getHours = this.state.hours.slice();
         return (
             <section className="sidebar">
-                <div className="timing__blocks" data-block-number='1'
+                <div className="timing__blocks"
                 >
                     {getHours.map((hour) =>
                         <span key={hour} className="clock">{hour}</span>
                     )}
                 </div>
-                
-                <RenderDay />
-              
-                <div className="timing"></div> 
-                
+                <div className="timing"></div>
+                <RenderWeek />
+            
             </section>
         );
     };

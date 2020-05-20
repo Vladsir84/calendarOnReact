@@ -12,22 +12,7 @@ class RenderDay extends Component {
                 '', 
                 '', 
                 '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '',  
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
-                '', 
+                
             ]
     };
 
@@ -37,7 +22,7 @@ class RenderDay extends Component {
         return (
             
             <div className="calendar-visualization">
-                <div className="emptyColumn">
+                <div className="emptyRow">
                   {getDays.map((day) => 
                     <div key={day} className="emptyCell">{day}</div>
                   )}  
