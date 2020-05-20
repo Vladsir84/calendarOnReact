@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import RenderWeek from './RenderWeek.jsx'
+import SidebarLine from './SidebarLine.jsx';
 
 class RenderSidebar extends Component {
 
@@ -43,6 +44,8 @@ class RenderSidebar extends Component {
                     )}
                 </div>
                 <div className="timing"></div>
+                
+                <SidebarLine />
                 <RenderWeek />
             
             </section>
