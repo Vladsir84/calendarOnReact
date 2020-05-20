@@ -8,31 +8,31 @@ const Navigation = () => {
         <div className="week">
             <div className="day">
                 <div className="day-name">Sun</div>
-                <div className="day-number">25</div>
+                <div className="day-number">11</div>
             </div>
             <div className="day">
                 <div className="day-name">Mon</div>
-                <div className="day-number">26</div>
+                <div className="day-number">12</div>
             </div>
             <div className="day">
                 <div className="day-name">Tue</div>
-                <div className="day-number">27</div>
+                <div className="day-number">13</div>
             </div>
             <div className="day">
                 <div className="day-name">We</div>
-                <div className="day-number">28</div>
+                <div className="day-number">14</div>
             </div>
             <div className="day">
                 <div className="day-name">Th</div>
-                <div className="day-number">29</div>
+                <div className="day-number">15</div>
             </div>
             <div className="day">
                 <div className="day-name">Fr</div>
-                <div className="day-number">30</div>
+                <div className="day-number">16</div>
             </div>
             <div className="day">
                 <div className="day-name">Sat</div>
-                <div className="day-number">1</div>
+                <div className="day-number">17</div>
             </div>
         </div>
     </nav>

@@ -32,7 +32,7 @@ const Header = () => {
                 </button>
             </div>
             <span className="dates">
-                November - December 2019
+                May 2020
             </span>
         </nav>
 
