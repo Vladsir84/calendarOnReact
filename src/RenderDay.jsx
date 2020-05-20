@@ -5,15 +5,15 @@ class RenderDay extends Component {
 
     state = {
         
-        days: [ '', 
+        days: [ 
                 '', 
                 '', 
                 '', 
                 '', 
                 '', 
                 '', 
-                
-            ]
+                '', 
+              ]
     };
 
     render() {
