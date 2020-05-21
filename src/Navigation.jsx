@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import { generateWeekRange } from './TimeUtils.jsx'
 
 
 class Navigation extends Component {
 
     constructor(props) {
-       super(props)
+        super(props)
 
-            this.state = {
-                daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',]
-            };
+        this.state = {
+            daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',]
+        };
     }
 
     render() {
@@ -20,7 +20,7 @@ class Navigation extends Component {
         const arr = generateWeekRange(monday);
         const numOfWeek = arr.slice();
 
-       
+
 
         return (
             <nav className="days-navigation">
@@ -34,8 +34,8 @@ class Navigation extends Component {
                         </div>
 
                     )}
-                    </div>
-                
+                </div>
+
             </nav>
         )
     }
