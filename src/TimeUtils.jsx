@@ -22,7 +22,7 @@ export const generateWeekRange = startDate => {
 };
 
 
-// вернет массив из 7 дней, начиная и переданной даты
+// вернет массив из 24 часов, начиная и переданной даты
 export const generateDayRange = startDate => {
     const result = [];
     for (let i = 0; i < 23; i += 1) {
