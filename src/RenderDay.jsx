@@ -24,7 +24,7 @@ class RenderDay extends Component {
             <div className="calendar-visualization">
                 <div className="emptyRow">
                   {getDays.map((day) => 
-                    <div key={day} className="emptyCell">{day}</div>
+                    <div key={Math.random()} className="emptyCell">{day}</div>
                   )}  
                 </div>
             </div>

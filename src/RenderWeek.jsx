@@ -9,7 +9,7 @@ const RenderWeek = () => {
     return (
         <div className="calendar-visualization">
             {generateDayRange().map((dayCell =>
-                   <RenderDay  key={dayCell}/>
+                   <RenderDay  key={Math.random()}/>
                 ))}
         </div>
 

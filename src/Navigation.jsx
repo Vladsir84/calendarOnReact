@@ -28,11 +28,11 @@ class Navigation extends Component {
             <nav className="days-navigation">
                 <div className="week">
                     {daysOfNavigation.map((day) =>
-                        <div className="day">
-                            <div key={day} className="day-name">
+                        <div key={Math.random()} className="day">
+                            <div className="day-name">
                                 {day}
                             </div>
-                            <div key={Math.random()} className="day-number">
+                            <div className="day-number">
                                 {formatDate(this.state.date)}
                                 {/* {numOfWeek} */}
 

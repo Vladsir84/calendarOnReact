@@ -36,7 +36,7 @@ class SidebarLine extends Component {
         return (
             <div className="line">
                 {renderLines.map(() =>
-                    <div className="line__blocks"></div>
+                    <div key={Math.random()} className="line__blocks"></div>
                 )}
             </div>
         )
