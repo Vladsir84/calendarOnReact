@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import moment from "moment";
 
+const formatDate = date => moment(date).format("MMM YYYY");
 
-const Header = () => {
+const Header = ({ date }) => {
 
     return (
         <header className="header">
@@ -31,7 +33,7 @@ const Header = () => {
                     </button>
                 </div>
                 <span className="dates">
-                    May 2020
+                {formatDate(date)}
             </span>
             </nav>
 
