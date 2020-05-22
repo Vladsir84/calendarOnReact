@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
+import moment from "moment";
 import { generateWeekRange } from './TimeUtils.jsx'
 
+const formatDate = date => moment(date).format("DD");
 
 class Navigation extends Component {
 
@@ -21,7 +23,6 @@ class Navigation extends Component {
         const numOfWeek = arr.slice();
 
 
-
         return (
             <nav className="days-navigation">
                 <div className="week">
@@ -29,7 +30,7 @@ class Navigation extends Component {
                         <div key={day} className="day-name">
                             {day}
                         </div>,
-                        <div className="day-number">
+                        <div key={Math.random()} className="day-number">
                             {numOfWeek}
                         </div>
 

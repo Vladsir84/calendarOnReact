@@ -37,7 +37,7 @@ class RenderSidebar extends Component {
         const getHours = this.state.hours.slice();
         return (
             <section className="sidebar">
-                <div className="timing__blocks"
+                <div  className="timing__blocks"
                 >
                     {getHours.map((hour) =>
                         <span key={hour} className="clock">{hour}</span>
