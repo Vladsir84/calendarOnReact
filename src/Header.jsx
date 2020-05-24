@@ -2,10 +2,12 @@
 import React from "react";
 import moment from "moment";
 
+
 const formatDate = date => moment(date).format("MMM YYYY");
 
-const Header = ({ date }) => {
 
+const Header = ({ date, onDayBack, onDayMove }) => {
+   
     return (
         <header className="header">
             <nav className="header-navbar">
@@ -25,10 +27,10 @@ const Header = ({ date }) => {
                     Today
             </button>
                 <div className="arrow-button">
-                    <button className="arrow-button__prev button-style">
+                    <button className="arrow-button__prev button-style" onClick={onDayMove}>
                         <i className="material-icons arrow-button__size">keyboard_arrow_left</i>
                     </button>
-                    <button className="arrow-button__next button-style">
+                    <button className="arrow-button__next button-style"  onClick={onDayBack}>
                         <i className="material-icons arrow-button__size ">keyboard_arrow_right</i>
                     </button>
                 </div>

@@ -11,7 +11,7 @@ class Navigation extends Component {
 
         this.state = {
             daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',],
-            date: [],
+            date: new Date(),
         };
     }
 
@@ -22,7 +22,8 @@ class Navigation extends Component {
         const { monday } = this.props.monday;
         const arr = generateWeekRange(monday);
         const numOfWeek = arr.slice();
-
+        const { onDayMove } = this.props.onDayMove;
+        const { onDayBack } = this.props.onDayBack;
 
         return (
             <nav className="days-navigation">
@@ -32,11 +33,7 @@ class Navigation extends Component {
                             <div className="day-name">
                                 {day}
                             </div>
-                            <div className="day-number">
-                                {formatDate(this.state.date)}
-                                {/* {numOfWeek} */}
-
-                            </div>
+                            <div className="day-number">{formatDate(this.state.date)}</div>
                         </div>
                     )}
                 </div>
