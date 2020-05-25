@@ -17,13 +17,6 @@ class Navigation extends Component {
 
     render() {
 
-        const dayOfWeek = (date, days) => {
-            const day = new Date(date).getDate();
-            const dateInFuture = new Date(date).setDate(day + days);
-
-            return this.state.daysOfWeek[new Date(dateInFuture).getDay()];
-        };
-
         const formatDate = date => moment(date).format("DD");
         const daysOfNavigation = this.state.daysOfWeek.slice();
        
