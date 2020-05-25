@@ -11,7 +11,7 @@ class App extends Component {
         super(props);
         this.state = {
             monday: getStartOfWeek(new Date()),
-            
+
         }
     }
 
@@ -19,36 +19,35 @@ class App extends Component {
         const currentDay = this.state.monday;
         const nextDay = new Date(
             currentDay.setState(currentDay.getDate() + 7)
-            )
-            
-            this.state({
-                monday: nextDay
-            })
-            
-            console.log(1)
+        )
+
+        this.setState({
+            monday: nextDay
+        })
+
     }
-    
+
     onDaysBack = () => {
         const currentDay = this.state.monday;
         const prevDay = new Date(
             currentDay.setState(currentDay.getDate() - 7)
         )
-       
-        this.state({
+
+        this.setState({
             monday: prevDay
         })
-    
+
     }
-    
+
     render() {
         return (
             <>
-                <Header 
-                onDaysMove = {this.onDaysMove}
-                onDaysBack = {this.onDaysBack}
+                <Header
+                    onDaysMove={this.onDaysMove}
+                    onDaysBack={this.onDaysBack}
                 />
-                <Navigation 
-                monday={this.state.monday}
+                <Navigation
+                    monday={this.state.monday}
                 />
                 <RenderSidebar />
             </>
