@@ -6,7 +6,9 @@ import moment from "moment";
 const formatDate = date => moment(date).format("MMM YYYY");
 
 const Header = ( props ) => {
-  const { date, onDaysBack, onDaysMove } = props;
+  
+    const { date, onDaysBack, onDaysMove } = props;
+  
     return (
         <header className="header">
             <nav className="header-navbar">
