@@ -19,14 +19,13 @@ class Navigation extends Component {
    
     render() {
         
-        // const week = generateWeekRange(this.props.monday)
-        // const formatDate = numOfWeek => moment(numOfWeek).format("DD");
+         // const formatDate = numOfWeek => moment(numOfWeek).format("DD");
         const daysOfNavigation = this.state.daysOfWeek.slice();
         console.log(this.props.monday)
         const arr = generateWeekRange(this.props.monday);
         console.log(arr)
         const numOfWeek  = arr.map(el => el.getDate());
-        let el = 0
+        let el = 0;
        
         return (
             <nav className="days-navigation">
