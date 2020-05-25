@@ -15,7 +15,7 @@ class App extends Component {
         }
     }
 
-    onDayMove = () => {
+    onDaysMove = () => {
         const currentDay = this.state.monday;
         const nextDay = new Date(
             currentDay.setState(currentDay.getDate() + 7)
@@ -28,7 +28,7 @@ class App extends Component {
             console.log(1)
     }
     
-    onDayBack = () => {
+    onDaysBack = () => {
         const currentDay = this.state.monday;
         const prevDay = new Date(
             currentDay.setState(currentDay.getDate() - 7)
@@ -44,8 +44,8 @@ class App extends Component {
         return (
             <>
                 <Header 
-                onDayMove = {this.onDayMove}
-                onDayBack = {this.onDayBack}
+                onDaysMove = {this.onDayMove}
+                onDaysBack = {this.onDayBack}
                 />
                 <Navigation 
                 monday={this.state.monday}

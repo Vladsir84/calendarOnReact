@@ -6,7 +6,7 @@ import moment from "moment";
 const formatDate = date => moment(date).format("MMM YYYY");
 
 
-const Header = ({ date, onDayBack, onDayMove }) => {
+const Header = ({ date, onDaysBack, onDaysMove }) => {
    
     return (
         <header className="header">
@@ -27,10 +27,10 @@ const Header = ({ date, onDayBack, onDayMove }) => {
                     Today
             </button>
                 <div className="arrow-button">
-                    <button className="arrow-button__prev button-style" onClick={() => onDayBack}>
+                    <button className="arrow-button__prev button-style" onClick={() => onDaysBack}>
                         <i className="material-icons arrow-button__size">keyboard_arrow_left</i>
                     </button>
-                    <button className="arrow-button__next button-style"  onClick={() => onDayMove}>
+                    <button className="arrow-button__next button-style"  onClick={() => onDaysMove}>
                         <i className="material-icons arrow-button__size ">keyboard_arrow_right</i>
                     </button>
                 </div>
