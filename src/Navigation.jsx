@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import moment from "moment";
-// import { generateWeekRange } from './TimeUtils.jsx'
+
 
 
 class Navigation extends Component {
@@ -11,10 +11,10 @@ class Navigation extends Component {
 
         this.state = {
             daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',],
-            date: new Date(),
+            date: new Date()
         };
     }
-
+   
     render() {
 
         const formatDate = date => moment(date).format("DD");
@@ -29,7 +29,8 @@ class Navigation extends Component {
                                 {day}
                             </div>
                             <div className="day-number">{
-                                formatDate(this.state.date)}
+                                formatDate(this.state.date)
+                                }
                             </div>
                         </div>
                     )}
