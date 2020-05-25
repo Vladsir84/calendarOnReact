@@ -6,15 +6,12 @@ import { generateWeekRange } from './TimeUtils.jsx'
 
 class Navigation extends Component {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
+    state = {
             
             daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',],
          
         };
-    }
+    
    
     render() {
         
