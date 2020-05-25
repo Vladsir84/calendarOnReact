@@ -51,8 +51,8 @@ class App extends Component {
                 />
                 <RenderSidebar />
             </>
-        )
-    }
-}
+        );
+    };
+};
 
 export default App
