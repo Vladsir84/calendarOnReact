@@ -26,7 +26,7 @@ class Navigation extends Component {
         const arr = generateWeekRange(this.props.monday);
         console.log(arr)
         const numOfWeek  = arr.map(el => el.getDate());
-        let el = 0;
+        let el = 0
        
         return (
             <nav className="days-navigation">
