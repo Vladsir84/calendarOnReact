@@ -27,10 +27,10 @@ const Header = ({ date, onDayBack, onDayMove }) => {
                     Today
             </button>
                 <div className="arrow-button">
-                    <button className="arrow-button__prev button-style" onClick={onDayMove}>
+                    <button className="arrow-button__prev button-style" onClick={() => onDayBack}>
                         <i className="material-icons arrow-button__size">keyboard_arrow_left</i>
                     </button>
-                    <button className="arrow-button__next button-style"  onClick={onDayBack}>
+                    <button className="arrow-button__next button-style"  onClick={() => onDayMove}>
                         <i className="material-icons arrow-button__size ">keyboard_arrow_right</i>
                     </button>
                 </div>
