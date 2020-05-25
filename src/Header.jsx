@@ -5,8 +5,8 @@ import moment from "moment";
 
 const formatDate = date => moment(date).format("MMM YYYY");
 
-const Header = ({ date, onDaysBack, onDaysMove }) => {
-  
+const Header = ( props ) => {
+  const { date, onDaysBack, onDaysMove } = props;
     return (
         <header className="header">
             <nav className="header-navbar">
@@ -26,10 +26,10 @@ const Header = ({ date, onDaysBack, onDaysMove }) => {
                     Today
             </button>
                 <div className="arrow-button">
-                    <button className="arrow-button__prev button-style" onClick={() => onDaysBack} >
+                    <button className="arrow-button__prev button-style" onClick={onDaysBack} >
                         <i className="material-icons arrow-button__size">keyboard_arrow_left</i>
                     </button>
-                    <button className="arrow-button__next button-style" onClick={() => onDaysMove} >
+                    <button className="arrow-button__next button-style" onClick={onDaysMove} >
                         <i className="material-icons arrow-button__size">keyboard_arrow_right</i>
                     </button>
                 </div>

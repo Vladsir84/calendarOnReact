@@ -18,7 +18,7 @@ class App extends Component {
     onDaysMove = () => {
         const currentDay = this.state.monday;
         const nextDay = new Date(
-            currentDay.setState(currentDay.getDate() + 7)
+            currentDay.setDate(currentDay.getDate() + 7)
         )
 
         this.setState({
@@ -30,7 +30,7 @@ class App extends Component {
     onDaysBack = () => {
         const currentDay = this.state.monday;
         const prevDay = new Date(
-            currentDay.setState(currentDay.getDate() - 7)
+            currentDay.setDate(currentDay.getDate() - 7)
         )
 
         this.setState({
