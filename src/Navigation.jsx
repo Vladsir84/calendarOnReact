@@ -26,13 +26,7 @@ class Navigation extends Component {
 
         const formatDate = date => moment(date).format("DD");
         const daysOfNavigation = this.state.daysOfWeek.slice();
-        // const { monday } = this.props.monday;
-        // const arr = generateWeekRange(monday);
-        // const numOfWeek = arr.slice();
-        // const { onDayMove } = this.props.onDayMove;
-        // const { onDayBack } = this.props.onDayBack;
-
-
+       
         return (
             <nav className="days-navigation">
                 <div className="week">
