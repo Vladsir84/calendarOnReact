@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { generateWeekRange } from './TimeUtils.jsx'
+import { generateWeekRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 const Navigation = ({ monday }) => {
     

@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import Header from './Header.jsx'
-import Navigation from './Navigation.jsx';
-import RenderSidebar from './RenderSidebar.jsx';
-import { getStartOfWeek } from './TimeUtils.jsx';
+import Header from './HeaderComponents/Header.jsx'
+import Navigation from './HeaderComponents/Navigation.jsx';
+import RenderSidebar from './Common/RenderSidebar.jsx';
+import { getStartOfWeek } from './FunctionsAndUtils/TimeUtils.jsx';
 import Popup from './Popup.jsx';
 
 

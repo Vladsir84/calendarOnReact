@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { getDisplayedMonth } from './TimeUtils.jsx'
+import { getDisplayedMonth } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 
 const Header = ( props ) => {

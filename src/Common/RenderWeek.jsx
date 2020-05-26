@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import RenderDay from './RenderDay.jsx'
-import { generateDayRange } from './TimeUtils.jsx'
+import { generateDayRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 
 const RenderWeek = () => {
