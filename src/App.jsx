@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Navigation from './Navigation.jsx';
 import RenderSidebar from './RenderSidebar.jsx';
 import { getStartOfWeek } from './TimeUtils.jsx';
+import Popup from './Popup.jsx';
 
 
 class App extends Component {
@@ -62,6 +63,7 @@ class App extends Component {
                     monday={this.state.monday}
                 />
                 <RenderSidebar />
+                <Popup />
             </>
         );
     };
