@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { generateWeekRange } from './TimeUtils.jsx'
