@@ -6,23 +6,21 @@ import { generateWeekRange } from './TimeUtils.jsx'
 class Navigation extends Component {
 
     state = {
-            
-            daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',],
-         
-        };
-    
-   
+
+        daysOfWeek: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',],
+
+    };
+
+
     render() {
-        
-  
+
+
         const daysOfNavigation = this.state.daysOfWeek.slice();
         const arr = generateWeekRange(this.props.monday);
         console.log(this.props.monday);
-        const numOfDate  = arr.map(el => el.getDate());
+        const numOfDate = arr.map(el => el.getDate());
         console.log(arr);
-       
-       
-        
+
         return (
             <nav className="days-navigation">
                 <div className="week">
@@ -32,7 +30,7 @@ class Navigation extends Component {
                                 {day}
                             </div>
                             <div className="day-number">{
-                              numOfDate}
+                                numOfDate}
                             </div>
                         </div>
                     )}
