@@ -1,13 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import moment from "moment";
+import { getDisplayedMonth } from './TimeUtils.jsx'
 
-
-const formatDate = date => moment(date).format("MMM YYYY");
 
 const Header = ( props ) => {
   
-    const { date, onDaysBack, onDaysMove } = props;
+    const { onDaysBack, onDaysMove, monday } = props;
   
     return (
         <header className="header">
@@ -36,13 +34,13 @@ const Header = ( props ) => {
                     </button>
                 </div>
                 <span className="dates">
-                {formatDate(date)}
+                {getDisplayedMonth(monday)}
             </span>
             </nav>
 
         </header>
-    )
-}
+    );
+};
 
 
 export default Header;

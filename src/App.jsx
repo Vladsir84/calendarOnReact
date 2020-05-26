@@ -45,6 +45,7 @@ class App extends Component {
                 <Header
                     onDaysMove={this.onDaysMove}
                     onDaysBack={this.onDaysBack}
+                    monday={this.state.monday}
                 />
                 <Navigation
                     monday={this.state.monday}

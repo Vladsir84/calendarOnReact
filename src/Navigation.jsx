@@ -17,12 +17,13 @@ class Navigation extends Component {
         
   
         const daysOfNavigation = this.state.daysOfWeek.slice();
-        console.log(this.props.monday)
+        console.log(this.props.monday);
         const arr = generateWeekRange(this.props.monday);
-        console.log(arr)
+        console.log(arr);
         const numOfDate  = arr.map(el => el.getDate());
         let el = 0;
        
+        
         return (
             <nav className="days-navigation">
                 <div className="week">
