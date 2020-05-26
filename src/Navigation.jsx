@@ -17,11 +17,11 @@ class Navigation extends Component {
         
   
         const daysOfNavigation = this.state.daysOfWeek.slice();
-        console.log(this.props.monday);
         const arr = generateWeekRange(this.props.monday);
-        console.log(arr);
+        console.log(this.props.monday);
         const numOfDate  = arr.map(el => el.getDate());
-        let el = 0;
+        console.log(arr);
+       
        
         
         return (
@@ -33,7 +33,7 @@ class Navigation extends Component {
                                 {day}
                             </div>
                             <div className="day-number">{
-                              numOfDate[el++]}
+                              numOfDate}
                             </div>
                         </div>
                     )}
