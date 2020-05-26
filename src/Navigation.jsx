@@ -2,7 +2,6 @@
 import React from 'react';
 import { generateWeekRange } from './TimeUtils.jsx'
 
-
 const Navigation = ({ monday }) => {
     
 const daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat',]
