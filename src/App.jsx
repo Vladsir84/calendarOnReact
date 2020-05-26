@@ -39,12 +39,23 @@ class App extends Component {
 
     }
 
+    onCurrentDay = () => {
+        const todayIsADay = getStartOfWeek(new Date())
+        
+        this.setState({
+            monday: todayIsADay
+        })
+    }
+    
+    
+    
     render() {
         return (
             <>
                 <Header
                     onDaysMove={this.onDaysMove}
                     onDaysBack={this.onDaysBack}
+                    onCurrentDay={this.onCurrentDay}
                     monday={this.state.monday}
                 />
                 <Navigation

@@ -5,7 +5,7 @@ import { getDisplayedMonth } from './TimeUtils.jsx'
 
 const Header = ( props ) => {
   
-    const { onDaysBack, onDaysMove, monday } = props;
+    const { onDaysBack, onDaysMove, monday, onCurrentDay } = props;
   
     return (
         <header className="header">
@@ -22,7 +22,7 @@ const Header = ( props ) => {
                     </div>
                     <span className="create-button__text create-event">Create</span>
                 </button>
-                <button className="today-button">
+                <button className="today-button" onClick={onCurrentDay} >
                     Today
             </button>
                 <div className="arrow-button">
