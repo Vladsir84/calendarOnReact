@@ -4,7 +4,7 @@ import Header from './HeaderComponents/Header.jsx'
 import Navigation from './HeaderComponents/Navigation.jsx';
 import RenderSidebar from './Common/RenderSidebar.jsx';
 import { getStartOfWeek } from './FunctionsAndUtils/TimeUtils.jsx';
-import Popup from './Popup.jsx';
+import Popup from './PopupAndEvent/Popup.jsx';
 
 
 class App extends Component {
