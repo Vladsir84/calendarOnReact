@@ -4,7 +4,7 @@ import { generateWeekRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 const Navigation = ({ monday }) => {
     
-const daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat',]
+const daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 const weekDays = generateWeekRange(monday)
 
     return (

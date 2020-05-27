@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const Popup = () => {
+const Popup = ({isPopupRendered}) => {
     return (
 
         <section className="popup">

@@ -5,12 +5,16 @@ import { getDisplayedMonth } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 const Header = ( props ) => {
   
-    const { onDaysBack, onDaysMove, monday, onCurrentDay } = props;
+    const { onDaysBack, onDaysMove, monday, onCurrentDay, popupRender } = props;
   
+    // const handlePopupRender = () => {
+    //     popupRender()
+    // }
+    
     return (
         <header className="header">
             <nav className="header-navbar">
-                <button className="create-button create-event">
+                <button className="create-button create-event" onClick={popupRender}>
                     <div className="button-create-event">
                         <svg className="create-event" width="36" height="36" viewBox="0 0 36 36">
                             <path className="create-event" fill="#34A853" d="M16 16v14h4V20z"></path>
