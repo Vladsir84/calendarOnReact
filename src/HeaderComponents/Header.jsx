@@ -7,10 +7,7 @@ const Header = ( props ) => {
   
     const { onDaysBack, onDaysMove, monday, onCurrentDay, popupRender } = props;
   
-    // const handlePopupRender = () => {
-    //     popupRender()
-    // }
-    
+       
     return (
         <header className="header">
             <nav className="header-navbar">
