@@ -105,7 +105,6 @@ class App extends Component {
                 isPopupRendered: !defState.isPopupRendered
             };
         });
-        console.log(1);
     };
 
 
