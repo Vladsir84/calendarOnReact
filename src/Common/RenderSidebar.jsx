@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import RenderWeek from './RenderWeek.jsx'
 import SidebarLine from './SidebarLine.jsx';
 
+
 class RenderSidebar extends Component {
 
     state = {
@@ -47,7 +48,7 @@ class RenderSidebar extends Component {
                 
                 <SidebarLine />
                 <RenderWeek />
-            
+             
             </section>
         );
     };

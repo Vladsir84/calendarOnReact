@@ -1,5 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+
 import React, { Component } from 'react';
+import Event from '../PopupAndEvent/Event.jsx';
 
 class RenderDay extends Component {
 
@@ -24,8 +26,10 @@ class RenderDay extends Component {
       <div className="calendar-visualization">
         <div className="emptyRow">
           {getDays.map((day) =>
-            <div key={Math.random()} className="emptyCell">{day}</div>
+            <div key={Math.random()} className="emptyCell">{day}<Event />
+            </div>
           )}
+         
         </div>
       </div>
 

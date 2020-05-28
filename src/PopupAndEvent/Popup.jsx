@@ -20,12 +20,12 @@ const Popup = () => {
 
                 <div className="date-block ">
                     <i className="Tiny material-icons">access_time</i>
-                    <input className="start-date input-style" type="date" name="trip-start" value="2020-05-26" max="2020-06-01" />
+                    <input className="start-date input-style" type="date" name="trip-start" value="---------" max="---------" />
 
-                    <input type="time" className="start-time time-list input-style " name="start-time" value="11:11" />
-                    <input type="time" className="end-time time-list input-style " name="end-time" value="11:11" />
+                    <input type="time" className="start-time time-list input-style " name="start-time" value="--:--" />
+                    <input type="time" className="end-time time-list input-style " name="end-time" value="--:--" />
 
-                    <input className="end-date input-style" type="date" name="trip-start" value="2020-05-26" max="2020-06-01" />
+                    <input className="end-date input-style" type="date" name="trip-start" value="---------" max="---------" />
                 </div>
                 <div className="description ">
                     <i className="Tiny material-icons ">format_align_left

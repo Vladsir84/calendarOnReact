@@ -1,11 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import moment from 'moment';
 import { generateWeekRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 const Navigation = ({ monday }) => {
-    
-const daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
-const weekDays = generateWeekRange(monday)
+
+    const daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+    const weekDays = generateWeekRange(monday);
+    const currentDate = new Date();
+
 
     return (
         <nav className="days-navigation">
@@ -16,7 +19,12 @@ const weekDays = generateWeekRange(monday)
                             {daysOfWeek[day.getDay()]}
                         </div>
                         <div className="day-number">
-                            {day.getDate()}
+                            {
+                                moment(currentDate).format("YYYY-MM-DD") ===
+                                    moment(day).format("YYYY-MM-DD") ?
+                                    <div className="current-day">{day.getDate()}</div> :
+                                    day.getDate()
+                            }
                         </div>
                     </div>
                 )}
