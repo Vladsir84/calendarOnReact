@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import moment from 'moment';
-import { generateNumbersRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 
 class Event extends Component {
