@@ -13,6 +13,7 @@ class App extends Component {
         this.state = {
             monday: getStartOfWeek(new Date()),
             isPopupRendered: false,
+           
         }
     }
 
@@ -71,10 +72,13 @@ class App extends Component {
                 <Navigation
                     monday={this.state.monday}
                 />
-                <RenderSidebar />
+                <RenderSidebar
+                    events={this.state.events}
+                />
                 {this.state.isPopupRendered && (
                     <Popup
                         popupRender={this.popupRender}
+                        events={this.state.events}
                     />
                 )}
             </>

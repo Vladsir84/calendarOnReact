@@ -33,6 +33,16 @@ export const generateDayRange = startDate => {
     return result;
 };
 
+
+export const generateNumbersRange = (from, to) => {
+    const result = [];
+    for (let i = from; i <= to;  i += 1) {
+        result.push(i);
+    }
+   return result;
+};
+
+
 // вернет объект даты по переданной дате '2000-01-01' и времени '21:00'
 export const getDateTime = (date, time) => {
     const [hours, minutes] = time.split(':');
