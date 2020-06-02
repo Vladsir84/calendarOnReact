@@ -16,8 +16,6 @@ class RenderDay extends Component {
       '',
       '',
     ],
-
-    createEvent: new Date(),
   };
 
   render() {
@@ -26,20 +24,19 @@ class RenderDay extends Component {
     return (
 
       <div className="calendar-visualization">
-        {generateNumbersRange(0, 23).map((num) =>
+      
           <div className="emptyRow"
-            time={(num - 10 < 0) ? `0${num}:00` : `${num}:00`}
+            time={generateNumbersRange(0, 23).map((num) =>(num - 10 < 0) ? `0${num}:00` : `${num}:00`)}
             key={Math.random()} >
 
             {getDays.map((dayCell) =>
               <RenderHour
                 key={Math.random()}
-
               />
             )}
 
           </div>
-        )}
+        
       </div>
 
     );
