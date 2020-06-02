@@ -4,16 +4,16 @@ import moment from 'moment';
 import Event from '../PopupAndEvent/Event.jsx';
 
 const RenderHour = ({ events }) => {
+const time = new Date();
 
     return (
         <div
             key={Math.random()}
             className="emptyCell"
         >
-            {/* {events.startTime ===
-                this.props.time ?  */}
-            <Event events={events} />
-            {/* } */}
+             {events.startTime ===
+                time ? <Event events={events} /> : ''}
+            
         </div>
     );
 };

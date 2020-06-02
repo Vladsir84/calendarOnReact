@@ -36,7 +36,6 @@ class Calendar extends Component {
 
     render() {
         
-        const {events}  = this.props.events;
         const getHours = this.state.hours.slice();
         console.log(this.props.events)
         
