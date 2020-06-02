@@ -3,9 +3,7 @@ import React from 'react';
 import moment from 'moment';
 import Event from '../PopupAndEvent/Event.jsx';
 
-const RenderHour = ({ events, time }) => {
-
-    const date = new Date();
+const RenderHour = () => {
 
     return (
         <div

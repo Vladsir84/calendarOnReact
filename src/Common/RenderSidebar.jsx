@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import RenderWeek from './RenderWeek.jsx'
+import RenderDay from './RenderDay.jsx'
 import SidebarLine from './SidebarLine.jsx';
 
 
@@ -47,7 +47,7 @@ class RenderSidebar extends Component {
                 <div className="timing"></div>
                 
                 <SidebarLine />
-                <RenderWeek />
+                <RenderDay />
              
             </section>
         );
