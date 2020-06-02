@@ -21,6 +21,7 @@ class RenderDay extends Component {
   render() {
 
     const getDays = this.state.days.slice()
+
     return (
       <div className="calendar-visualization">
         {generateNumbersRange(1, 23).map((num) =>
@@ -31,9 +32,9 @@ class RenderDay extends Component {
             {getDays.map((dayCell) =>
               <RenderHour
                 key={Math.random()}
+                events={this.props.events}
               />
             )}
-
           </div>
         )}
       </div>
@@ -41,5 +42,6 @@ class RenderDay extends Component {
     );
   };
 }
+
 
 export default RenderDay;

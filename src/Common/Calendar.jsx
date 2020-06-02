@@ -4,7 +4,7 @@ import RenderDay from './RenderDay.jsx'
 import SidebarLine from './SidebarLine.jsx';
 
 
-class RenderSidebar extends Component {
+class Calendar extends Component {
 
     state = {
         hours: [
@@ -35,7 +35,11 @@ class RenderSidebar extends Component {
     };
 
     render() {
+        
+        const {events}  = this.props.events;
         const getHours = this.state.hours.slice();
+        console.log(this.props.events)
+        
         return (
             <section className="sidebar">
                 <div className="timing__blocks"
@@ -47,11 +51,13 @@ class RenderSidebar extends Component {
                 <div className="timing"></div>
                 
                 <SidebarLine />
-                <RenderDay />
+                <RenderDay 
+                 events={this.props.events}
+                />
              
             </section>
         );
     };
 }
 
-export default RenderSidebar;
+export default Calendar;
