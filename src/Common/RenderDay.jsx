@@ -29,19 +29,20 @@ class RenderDay extends Component {
             key={Math.random()}
             time={num - 10 < 0 ? `0${num}:00` : `${num}:00`}
           >
-            {getDays.map((dayCell) =>
+            {getDays.map(() =>
               <RenderHour
                 key={Math.random()}
                 events={this.props.events}
+                time={this.props.time}
               />
             )}
           </div>
         )}
       </div>
-
     );
   };
 }
+
 
 
 export default RenderDay;

@@ -3,19 +3,19 @@ import React from 'react';
 import moment from 'moment';
 import Event from '../PopupAndEvent/Event.jsx';
 
-const RenderHour = ({ events }) => {
-const time = new Date();
+const RenderHour = ({ events, time }) => {
 
-    return (
+return (
         <div
-            key={Math.random()}
-            className="emptyCell"
+        key={Math.random()}
+        className="emptyCell"
         >
-             {events.startTime ===
-                time ? <Event events={events} /> : ''}
+             {events.startTime === 
+                time  ? <Event events={events} /> : ''} 
             
         </div>
     );
+    
 };
 
 export default RenderHour;
