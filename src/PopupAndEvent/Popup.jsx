@@ -43,8 +43,8 @@ class Popup extends Component {
 		const { eventId, onEventDelete } = this.props;
 
 		return (
-			<section className='popup' onSubmit={this.handleSubmit}>
-				<form className='popup__form'>
+			<section className='popup'  >
+				<form className='popup__form' onSubmit={this.handleSubmit}>
 					<button className='close material-icons'>close</button>
 
 					<input
@@ -121,7 +121,7 @@ class Popup extends Component {
 						<button className='delete-event ' onClick={() => onEventDelete(eventId)}>
 							<i className='Tiny material-icons material-icons-delete'>delete</i>
 						</button>
-						<button type='submit' className='submit-button '>
+						<button type='submit' className='submit-button ' onClick={console.log(this.props.events)}>
 							Save
 					</button>
 					</div>

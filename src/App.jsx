@@ -76,7 +76,7 @@ class App extends Component {
             newEvent.title = 'Add title';
         }
         
-        createEvent(newEvent).then((data) => {
+      createEvent(newEvent).then((data) => {
 			const { events } = this.state;
 			events.push(data);
 			return this.setState({ events });
@@ -98,7 +98,11 @@ class App extends Component {
 					monday={this.state.monday}
 				/>
 				<Navigation monday={this.state.monday} />
-				<Calendar events={this.state.events} />
+				<Calendar 
+				events={this.state.events} 
+				onEventDelete={this.onEventDelete}
+				/>
+				
 				{this.state.isPopupRendered && (
 					<Popup
 						popupRender={this.popupRender}

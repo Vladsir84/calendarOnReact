@@ -19,11 +19,11 @@ class RenderDay extends Component {
   };
 
   render() {
-    const {events, index, popupRender} = this.props
+    const {events, index, popupRender, date} = this.props
     const getDays = this.state.days.slice()
     const event = filteredByTime(events, index);
     const id = index + 1;
-    
+  
     
     return (
       <div className="calendar-visualization">
@@ -36,7 +36,9 @@ class RenderDay extends Component {
             {getDays.map(() =>
               <RenderHour
                 key={Math.random()}
+                hour={index}
                 event={event}
+                date={date}
                 id={id}
                 popupRender={popupRender}
               />
