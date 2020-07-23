@@ -123,7 +123,7 @@ class Popup extends Component {
 						</button>
 						<button type='submit' className='submit-button '>
 							Save
-						</button>
+					</button>
 					</div>
 				</form>
 			</section>
