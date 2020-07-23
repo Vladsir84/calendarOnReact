@@ -7,8 +7,8 @@ const RenderHour = ({ handleDeleteEvent, event, hour, date }) => {
 	// const redLine = date.toDateString() === new Date().toDateString && hour === new Date().getHours();
 	return (
 		<div key={Math.random()} className="emptyCell">
-
-			{/* {redLine && <RedLine key= {Math.random()} />} */}
+      
+			{/* {redLine && <RedLine key= {Math.random()} />} */} 
 			{event && <Event event={event} handleDeleteEvent={handleDeleteEvent} id={event.id} />}
 
 		</div>
