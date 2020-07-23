@@ -94,3 +94,21 @@ export const createNewEvent = () => {
 
 	return newEvent;
 };
+
+
+
+export const filteredByDate = (events, day) => {
+	events.filter((event) => {
+		return (
+		new Date(day).getDate() === new Date(event.startDate).getDate() &&
+		new Date(day).getMonth() === new Date(event.startDate).getMonth()
+		)
+	})
+}
+
+export const filteredByTime = (events, hour) => {
+	const currentEvent = events.filter((event) => hour === new Date(event.startDate).getHours());
+	const [event] = currentEvent;
+	return event;
+
+};

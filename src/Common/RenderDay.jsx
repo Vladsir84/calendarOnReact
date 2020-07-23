@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import RenderHour from './RenderHour.jsx'
-import { generateNumbersRange } from '../FunctionsAndUtils/TimeUtils.jsx'
+import { generateNumbersRange, filteredByTime } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 class RenderDay extends Component {
 
@@ -19,11 +19,15 @@ class RenderDay extends Component {
   };
 
   render() {
-
+    const {events, index, popupRender} = this.props
     const getDays = this.state.days.slice()
-
+    const event = filteredByTime(events, index);
+    const id = index + 1;
+    
+    
     return (
       <div className="calendar-visualization">
+        
         {generateNumbersRange(1, 23).map((num) =>
           <div className="emptyRow"
             key={Math.random()}
@@ -32,8 +36,9 @@ class RenderDay extends Component {
             {getDays.map(() =>
               <RenderHour
                 key={Math.random()}
-                events={this.props.events}
-                time={this.props.time}
+                event={event}
+                id={id}
+                popupRender={popupRender}
               />
             )}
           </div>
