@@ -43,85 +43,85 @@ class Popup extends Component {
 		const { eventId, onEventDelete } = this.props;
 
 		return (
-			<section className="popup" onSubmit={this.handleSubmit}>
-				<form className="popup__form">
-					<button className="close material-icons">close</button>
+			<section className='popup' onSubmit={this.handleSubmit}>
+				<form className='popup__form'>
+					<button className='close material-icons'>close</button>
 
 					<input
-						name="title"
-						className="input__name"
-						type="text"
-						placeholder="Add title"
+						name='title'
+						className='input__name'
+						type='text'
+						placeholder='Add title'
 						value={title}
 						onChange={this.onInput}
 					/>
 
-					<div className="color-picker">
-						<label className="color-picker_label">
-							<span className="color-picker_label-text">Select a color</span>
+					<div className='color-picker'>
+						<label className='color-picker_label'>
+							<span className='color-picker_label-text'>Select a color</span>
 							<input
-								className="event__color-picker"
-								type="color"
-								name="color"
+								className='event__color-picker'
+								type='color'
+								name='color'
 								value={color}
 								onChange={this.onInput}
 							/>
 						</label>
 					</div>
 
-					<div className="date-block ">
-						<i className="Tiny material-icons">access_time</i>
+					<div className='date-block '>
+						<i className='Tiny material-icons'>access_time</i>
 						<input
-							className="start-date input-style"
-							type="date"
-							name="startDate"
+							className='start-date input-style'
+							type='date'
+							name='startDate'
 							value={startDate}
 							onChange={this.onInput}
 						/>
 
 						<input
-							type="time"
-							className="start-time time-list input-style "
-							name="startTime"
+							type='time'
+							className='start-time time-list input-style '
+							name='startTime'
 							value={startTime}
 							onChange={this.onInput}
 						/>
 
 						<input
-							type="time"
-							className="end-time time-list input-style "
-							name="endTime"
+							type='time'
+							className='end-time time-list input-style '
+							name='endTime'
 							value={endTime}
 							onChange={this.onInput}
 						/>
 
 						<input
-							className="end-date input-style"
-							type="date"
-							name="endDate"
+							className='end-date input-style'
+							type='date'
+							name='endDate'
 							onChange={this.onInput}
 							value={endDate}
 						/>
 					</div>
 
-					<div className="description ">
-						<i className="Tiny material-icons ">format_align_left</i>
+					<div className='description '>
+						<i className='Tiny material-icons '>format_align_left</i>
 						<textarea
-							className="description-input "
-							name="description"
-							cols="42 "
-							rows="4 "
-							placeholder="Add description"
+							className='description-input '
+							name='description'
+							cols='42 '
+							rows='4 '
+							placeholder='Add description'
 							value={description}
-						    onChange={this.onInput}
+							onChange={this.onInput}
 						></textarea>
 					</div>
 
-					<div className="control ">
-						<button className="delete-event " onClick={() => onEventDelete(eventId)}>
-							<i className="Tiny material-icons material-icons-delete">delete</i>
+					<div className='control '>
+						<button className='delete-event ' onClick={() => onEventDelete(eventId)}>
+							<i className='Tiny material-icons material-icons-delete'>delete</i>
 						</button>
-						<button type="submit" className="submit-button ">
+						<button type='submit' className='submit-button '>
 							Save
 						</button>
 					</div>
