@@ -1,5 +1,9 @@
 const baseUrl = 'https://5f169742a346a00016739042.mockapi.io/api/v1/events';
 
+export const fetchEvents = () =>
+    fetch(baseUrl)
+        .then(response => response.json());
+
 export const createEvent = eventData =>
     fetch(baseUrl, {
         method: 'POST',
@@ -16,6 +20,3 @@ export const deleteEvent = eventId =>
     });
 
 
-export const fetchEvents = () =>
-    fetch(baseUrl)
-        .then(response => response.json());

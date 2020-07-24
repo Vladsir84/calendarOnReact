@@ -1,8 +1,9 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
-import RenderDay from "./RenderDay.jsx";
+import Day from "./Day.jsx";
 import SidebarLine from "./SidebarLine.jsx";
-import { filteredByDate } from '../FunctionsAndUtils/TimeUtils.jsx'
+// import { filteredByDate , filteredByTime } from '../FunctionsAndUtils/TimeUtils.jsx'
 
 class Calendar extends Component {
 	state = {
@@ -34,9 +35,10 @@ class Calendar extends Component {
 	};
 
 	render() {
-		const {events, day} = this.props;
+		const { events, onEventDelete } = this.props;
 		const getHours = this.state.hours.slice();
-		const daysEvent = filteredByDate(events, day) 
+
+		 	
 		
 		return (
 			<section className='sidebar'>
@@ -47,10 +49,11 @@ class Calendar extends Component {
 						</span>
 					))}
 				</div>
-				{/* <div className='timing'></div> */}
-
 				<SidebarLine />
-				<RenderDay events={events} />
+				<Day
+					events={events}
+					onEventDelete={onEventDelete}
+				/>
 			</section>
 		);
 	}

@@ -57,11 +57,9 @@ class App extends Component {
 	};
 
 	fetchEvent = () => {
-		 fetchEvents().then((eventsList) => {
-			this.setState({
+		 fetchEvents().then((eventsList) => this.setState({
 				events: eventsList,
-			});
-		});
+			})).catch((err) => console.log('Error', err));
 	};
 
 	handleCreateEvent = (event) => {

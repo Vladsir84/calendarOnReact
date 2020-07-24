@@ -1,36 +1,33 @@
 .sidebar {
-  display: flex;
-  width: 100%;
-  z-index: 1;
+    display: flex;
+    width: 100%;
+    z-index: 1;
 }
-  
+
 .clock {
-    display: flex; 
+    display: flex;
     position: relative;
-      top: 52px;
-      margin-right: 10px;
-      margin-left: 10px;
-      flex-direction: column;
-      height: 60px;
-      color: black;
+    top: 52px;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    height: 60px;
+    color: black;
 }
-  
-  .timing {
+
+.timing {
     &__blocks {
-      margin-right: 10px;
-      margin-left: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
-  }
-  
-  .line {
+}
+
+.line {
     &__blocks {
-      position: relative;
-      top: 60px;
-      height: 60px;
-      width: 10px;
-      border-top: 1px solid #70757a;
+        position: relative;
+        top: 60px;
+        height: 60px;
+        width: 10px;
+        border-top: 1px solid #70757a;
     }
-  }
-
-
-
+}
