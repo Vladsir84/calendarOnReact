@@ -35,7 +35,7 @@ class RenderDay extends Component {
         
         
         {generateNumbersRange(1, 23).map((num) =>
-        
+          // const eventsOnDay = filteredByTime(events, day);
           <div className="emptyRow"
             key={Math.random()}
            >
@@ -43,7 +43,7 @@ class RenderDay extends Component {
               <div key={Math.random()} className="emptyCell">
 
                 {/* {redLine && <RedLine key= {Math.random()} />} */}
-             <Event event={events} onEventDelete={onEventDelete}  /> 
+            {/* { events && <Event event={events} onEventDelete={onEventDelete} date={emptyCell} /> } */}
 
               </div>
 
