@@ -1,4 +1,4 @@
-.sidebar {
+.main {
     display: flex;
     width: 100%;
     z-index: 1;
@@ -15,11 +15,9 @@
     color: black;
 }
 
-.timing {
-    &__blocks {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+.sidebar {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .line {

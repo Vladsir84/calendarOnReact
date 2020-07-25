@@ -24,26 +24,20 @@ class RenderDay extends Component {
   render() {
     const { events, popupRender, onEventDelete } = this.props
     const getDays = this.state.days.slice()
-    	// const redLine = date.toDateString() === new Date().toDateString && hour === new Date().getHours();
-  
-    
-    
+    // const redLine = date.toDateString() === new Date().toDateString && hour === new Date().getHours();
+
     return (
       <div className="calendar-visualization">
-
-        
-        
-        
         {generateNumbersRange(1, 23).map((num) =>
           // const eventsOnDay = filteredByTime(events, day);
           <div className="emptyRow"
             key={Math.random()}
-           >
+          >
             {getDays.map((emptyCell) =>
               <div key={Math.random()} className="emptyCell">
 
                 {/* {redLine && <RedLine key= {Math.random()} />} */}
-            {/* { events && <Event event={events} onEventDelete={onEventDelete} date={emptyCell} /> } */}
+                {/* { events && <Event events={events} onEventDelete={onEventDelete} date={emptyCell} /> } */}
 
               </div>
 

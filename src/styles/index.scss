@@ -1,13 +1,10 @@
 @import "navigation.scss";
 @import "header.scss";
 @import "calendar-visualization.scss";
-@import "sidebar.scss";
+@import "main.scss";
 @import "popup.scss";
 @import "event.scss";
-
 * {
-  box-sizing: border-box;
-  font-family: Roboto;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
-
-
