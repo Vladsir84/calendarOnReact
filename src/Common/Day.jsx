@@ -5,7 +5,7 @@ import { generateNumbersRange } from '../FunctionsAndUtils/TimeUtils.jsx'
 import Event from '../PopupAndEvent/Event.jsx';
 import RedLine from '../PopupAndEvent/RedLine.jsx';
 
-class RenderDay extends Component {
+class Day extends Component {
 
   state = {
 
@@ -52,4 +52,4 @@ class RenderDay extends Component {
 
 
 
-export default RenderDay;
+export default Day;
