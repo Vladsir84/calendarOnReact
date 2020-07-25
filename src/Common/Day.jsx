@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 // import RenderHour from './RenderHour.jsx'
@@ -28,13 +27,13 @@ class RenderDay extends Component {
 
     return (
       <div className="calendar-visualization">
-        {generateNumbersRange(1, 23).map((num) =>
+        {generateNumbersRange(0, 23).map((num) =>
           // const eventsOnDay = filteredByTime(events, day);
           <div className="emptyRow"
-            key={Math.random()}
+            key={Math.random()} time={(num - 10 < 0 ? `0${num}:00` : `${num}:00`)}
           >
             {getDays.map((emptyCell) =>
-              <div key={Math.random()} className="emptyCell">
+              <div key={Math.random()} className="emptyCell" >
 
                 {/* {redLine && <RedLine key= {Math.random()} />} */}
                 {/* { events && <Event events={events} onEventDelete={onEventDelete} date={emptyCell} /> } */}
