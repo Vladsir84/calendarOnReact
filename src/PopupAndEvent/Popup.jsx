@@ -1,20 +1,19 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
-import React, { Component } from 'react';
-import { createNewEvent } from '../FunctionsAndUtils/TimeUtils.jsx';
+import React, { Component } from "react";
+import { createNewEvent } from "../FunctionsAndUtils/TimeUtils.jsx";
 
 class Popup extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			title: 'Add title',
-			color: '#4183f1',
-			startDate: '',
-			endDate: '',
-			startTime: '',
-			endTime: '',
-			description: '',
+			title: "Add title",
+			color: "#4183f1",
+			startDate: "",
+			endDate: "",
+			startTime: "",
+			endTime: "",
+			description: "",
 		};
 	}
 
@@ -25,27 +24,35 @@ class Popup extends Component {
 		});
 	}
 
+	handleCreateNewEvent = (e) => {
+		e.preventDefault();
+		if (Object.values(this.state).some((el) => el === "")) {
+			console.log('empty');
+		}
+
+		this.props.handleCreateEvent(this.state)
+		this.hidePopup();
+	}
+
 	onInput = (e) => {
 		this.setState({
 			[e.target.name]: e.target.value,
 		});
 	};
 
-	handleSubmit = (e) => {
-		const { handleCreateEvent, popupRender } = this.props;
-		e.preventDefault();
-		const newEvent = this.state;
-		handleCreateEvent(newEvent);
-		popupRender();
-	};
+	hidePopup = () => {
+		this.props.popupRender();
+	}
+
+
 
 	render() {
 		const { title, color, startDate, endDate, startTime, endTime, description } = this.state;
-		const { eventId, onEventDelete } = this.props;
+		const { id, onEventDelete } = this.props;
 
 		return (
-			<section className='popup'  >
-				<form className='popup__form' onSubmit={this.handleSubmit}>
+			<section className='popup'>
+				<form className='popup__form' onSubmit={this.handleCreateNewEvent}>
 					<button className='close material-icons'>close</button>
 
 					<input
@@ -119,12 +126,12 @@ class Popup extends Component {
 					</div>
 
 					<div className='control '>
-						<button className='delete-event ' onClick={() => onEventDelete(eventId)}>
+						<button className='delete-event ' onClick={() => onEventDelete(id)}>
 							<i className='Tiny material-icons material-icons-delete'>delete</i>
 						</button>
 						<button type='submit' className='submit-button ' onClick={console.log(this.props.events)}>
 							Save
-					</button>
+						</button>
 					</div>
 				</form>
 			</section>

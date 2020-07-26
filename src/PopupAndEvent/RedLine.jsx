@@ -24,9 +24,7 @@ class RedLine extends Component {
     clearInterval(this.interval);
   }
 
-
-
-  render() {
+render() {
     const { minutes } = this.state;
     return (
       <div className="redLine" style={{ marginTop: `${minutes}px` }}>
