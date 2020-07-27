@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import Popup from './Popup.jsx';
 import RedLine from './RedLine.jsx';
-import { generateNumbersRange } from '../FunctionsAndUtils/TimeUtils.jsx';
+import { generateNumbersRange } from '../GatewaysAndUtils/TimeUtils.jsx';
 
 class Event extends Component {
 	state = {
@@ -77,16 +77,17 @@ class Event extends Component {
 			});
 		}
 	};
-
+	
 	render() {
-
+		
 		const fullHoursArray = this.getDayWithEvents(
 			this.props.events,
 			this.props.day
-		);
-
-		const { onEventDelete } = this.props
-
+			);
+			
+			const { onEventDelete } = this.props
+			const height = this.props.events.map((event) => (new Date(event.endTime) - new Date(event.startTime)) / 1000 / 60);
+		
 		return (
 			<>
 				{this.state.redlineShow ? <RedLine style={{ top: `${this.state.minutes}px` }} /> : ''}
@@ -100,6 +101,7 @@ class Event extends Component {
 										key={event.id}
 										className="active_event"
 										onClick={this.showPopupEvent}
+									  style={{ height: `${height}px` }}
 									>
 										{`${event.title} 
                      ${event.startTime} ${event.endTime}`}

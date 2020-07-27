@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
-import { createNewEvent } from "../FunctionsAndUtils/TimeUtils.jsx";
+import { createNewEvent } from "../GatewaysAndUtils/TimeUtils.jsx";
 
 class Popup extends Component {
 	constructor(props) {

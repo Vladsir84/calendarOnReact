@@ -1,7 +1,6 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { getDisplayedMonth } from "../FunctionsAndUtils/TimeUtils.jsx";
+import { getDisplayedMonth } from "../GatewaysAndUtils/TimeUtils.jsx";
 
 const Header = (props) => {
 	const { onDaysBack, onDaysMove, monday, onCurrentDay, popupRender } = props;
