@@ -123,5 +123,3 @@ class Event extends Component {
 }
 
 export default Event;
-
-
