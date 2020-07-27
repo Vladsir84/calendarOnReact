@@ -65,25 +65,7 @@ class App extends Component {
 		});
 	};
 
-	// handleCreateEvent = (event) => {
-	// 	const newEvent = event;
-	// 	const startTime = newEvent.startTime.split(':');
-	// 	newEvent.startDate = new Date(new Date(newEvent.startDate).setHours(+startTime[0], +startTime[1]));
-
-	// 	const endTime = newEvent.endTime.split(':');
-	// 	newEvent.endDate = new Date(new Date(newEvent.endDate).setHours(+endTime[0], +endTime[1]));
-
-	//       if (newEvent.title === ''){
-	//           newEvent.title = 'Add title';
-	//       }
-
-	//     createEvent(newEvent).then((data) => {
-	// 		const { events } = this.state;
-	// 		events.push(data);
-	// 		return this.setState({ events });
-	// 	});
-	// };
-
+	
 	handleCreateEvent = async (newEventData) => {
 		const newEvent = await createEvent(newEventData)
 		this.fetchEvent();
