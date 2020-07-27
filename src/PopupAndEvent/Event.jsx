@@ -77,17 +77,17 @@ class Event extends Component {
 			});
 		}
 	};
-	
+
 	render() {
-		
+
 		const fullHoursArray = this.getDayWithEvents(
 			this.props.events,
 			this.props.day
-			);
-			
-			const { onEventDelete } = this.props
-			const height = this.props.events.map((event) => (new Date(event.endTime) - new Date(event.startTime)) / 1000 / 60);
-		
+		);
+
+		const { onEventDelete } = this.props
+
+
 		return (
 			<>
 				{this.state.redlineShow ? <RedLine style={{ top: `${this.state.minutes}px` }} /> : ''}
@@ -101,7 +101,12 @@ class Event extends Component {
 										key={event.id}
 										className="active_event"
 										onClick={this.showPopupEvent}
-									  style={{ height: `${height}px` }}
+										style={{
+											height: `${Number(
+												new Date(`${event.startDate} ${event.endTime}`) -
+												new Date(`${event.startDate} ${event.startTime}`)
+											) / 1000 / 60}px`
+										}}
 									>
 										{`${event.title} 
                      ${event.startTime} ${event.endTime}`}
@@ -110,7 +115,7 @@ class Event extends Component {
 												eventDelete={this.state.eventDelete}
 												id={event.id}
 												onEventDelete={onEventDelete}
-											/>: ''}
+											/> : ''}
 									</div>
 								);
 							})}
