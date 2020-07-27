@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponents/Header.jsx';
 import Navigation from './HeaderComponents/Navigation.jsx';
-import { getStartOfWeek } from './FunctionsAndUtils/TimeUtils.jsx';
 import Popup from './PopupAndEvent/Popup.jsx';
 import Calendar from './Common/Calendar.jsx';
+import { getStartOfWeek } from './FunctionsAndUtils/TimeUtils.jsx';
 import { createEvent, deleteEvent, fetchEvents } from './FunctionsAndUtils/Gateways.jsx';
 
 class App extends Component {
