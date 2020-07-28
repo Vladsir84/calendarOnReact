@@ -53,7 +53,7 @@ class Popup extends Component {
 		return (
 			<section className='popup'>
 				<form className='popup__form' onSubmit={this.handleCreateNewEvent}>
-					<button className='close material-icons'>close</button>
+					<button className='close material-icons' onClick={this.hidePopup}>close</button>
 
 					<input
 						name='title'
@@ -129,7 +129,7 @@ class Popup extends Component {
 						<button className='delete-event ' onClick={() => onEventDelete(id)}>
 							<i className='Tiny material-icons material-icons-delete'>delete</i>
 						</button>
-						<button type='submit' className='submit-button ' onClick={console.log(this.props.events)}>
+						<button type='submit' className='submit-button ' onSubmit={this.handleCreateNewEvent}>
 							Save
 						</button>
 					</div>
