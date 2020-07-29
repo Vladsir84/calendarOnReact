@@ -62,6 +62,7 @@ class Popup extends Component {
 						placeholder='Add title'
 						value={title}
 						onChange={this.onInput}
+					  required
 					/>
 
 					<div className='color-picker'>
